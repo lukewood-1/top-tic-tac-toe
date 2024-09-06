@@ -13,56 +13,48 @@ const gameBoard = ( function(){
 		gameManager.setBoxShadow(0);
 		gameManager.setBoxShadow(1);
 		gameManager.setBoxShadow(2);
-	 	clean();
-    return winQuote(board[0]);
+    return winQuote(board[0])
  }
  else if (board[0] && board[0] === board[3] && board[3] === board[6]){ //1-7
 		gameManager.setBoxShadow(0);
 		gameManager.setBoxShadow(3);
 		gameManager.setBoxShadow(6);
-	 	clean();
     return winQuote(board[0]);
 	} 
  else if(board[0] && board[0] === board[4] && board[4] === board[8]){ //1-9
 		gameManager.setBoxShadow(0);
 		gameManager.setBoxShadow(4);
 		gameManager.setBoxShadow(8);
-	 	clean();
     return winQuote(board[0]);
   }
   else if(board[1] && board[1] === board[4] && board[4] === board[7]){ //2-8
 		gameManager.setBoxShadow(1);
 		gameManager.setBoxShadow(4);
 		gameManager.setBoxShadow(7);
-	 	clean();
     return winQuote(board[1]);
   }
   else if(board[2] && board[2] === board[4] && board[4] === board[6]){ //3-7
 		gameManager.setBoxShadow(2);
 		gameManager.setBoxShadow(4);
 		gameManager.setBoxShadow(6);
-	 	clean();
     return winQuote(board[2]);
   }
   else if(board[2] && board[2] === board[5] && board[5] === board[8]){ //3-9
 		gameManager.setBoxShadow(2);
 		gameManager.setBoxShadow(5);
 		gameManager.setBoxShadow(8);
-	 	clean();
     return winQuote(board[2]);
   }
   else if(board[3] && board[3] === board[4] && board[4] === board[5]){ //4-6
 		gameManager.setBoxShadow(3);
 		gameManager.setBoxShadow(4);
 		gameManager.setBoxShadow(5);
-	 	clean();
     return winQuote(board[3]);
   }
   else if(board[6] && board[6] === board[7] && board[7] === board[8]){ //7-9
 		gameManager.setBoxShadow(6);
 		gameManager.setBoxShadow(7);
 		gameManager.setBoxShadow(8);
-	 	clean();
     return winQuote(board[6])
   }
 	else if(!board.includes(undefined)){
