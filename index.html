@@ -9,16 +9,39 @@
 <body>
 	<div class="header">
 		<ul>
-			<li class="logo">LOGO</li>
+			<li class="logo british">🇬🇧 noughts and crosses 🇬🇧</li>
 			<li class="new-game">new game</li>
+			<li class="logo american">🇺🇸 tic-tac-toe 🇺🇸</li>
 		</ul>
 	</div>
 	<div class="title">
-		<h1>Noughts and Crosses</h1>
-		<h2>... or tic-tac-toe if you're american</h2>
-		<button class="play-btn">start game</button>
+		<h1><span class="british spaced">Noughts and Crosses</span></h1>
+		<h2>... or <span class="american">tic-tac-toe</span> if you're american</h2>
 	</div>
 	<div class="container">
+		<div class="player-info-container">
+			<h2 class="player-info-title">players info</h2>
+			<div class="player-1-wrapper player-wrapper">
+				<div class="player-clr-wrapper">
+					<label for="player-clr-1">player 1 color: </label>
+					<input id="player-clr-1" type="color" name="player-1-clr">
+				</div>
+				<div class="player-name-wrapper">
+					<label for="player-name-1">player 1 name: </label>
+					<input id="player-name-1" type="text" name="player-1-name">
+				</div>
+			</div>
+			<div class="player-2-wrapper player-wrapper">
+				<div class="player-clr-wrapper">
+					<input id="player-clr-2" type="color" name="player-2-clr">
+					<label for="player-clr-2">player 2 color: </label>
+				</div>
+				<div class="player-name-wrapper">
+					<input id="player-name-2" type="text" name="player-2-name">
+					<label for="player-name-2">player 2 name: </label>
+				</div>
+			</div>
+		</div>
 		<div class="game-container">
 			<div class="top-message-board"></div>
 			<div class="game-board">
